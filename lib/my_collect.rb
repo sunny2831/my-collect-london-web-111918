@@ -1,3 +1,5 @@
+list = ['ruby', 'javascript', 'python', 'objective-c']
+
 def my_collect(array)
   i = 0
   name_collection = []
@@ -8,4 +10,4 @@ def my_collect(array)
   name_collection
 end
 
-my_collect(list) {|i| i.split(" ").first}
+my_collect(list) {|lang| lang.upcase}
