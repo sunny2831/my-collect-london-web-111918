@@ -5,4 +5,3 @@ def hamburger(languages)
   end
   my_statements
 end
-
