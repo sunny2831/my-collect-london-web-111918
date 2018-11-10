@@ -1,13 +1,13 @@
 collection = ['ruby', 'javascript', 'python', 'objective-c']
 
-def my_collect(collection)
+def my_collect(array)
   i = 0
-  empty_array = []
-  while i < collection.length
-    empty_array.push yield(collection[i])
+  empty_collection = []
+  while i < array.length
+    empty_collection.push yield(array[i])
     i += 1
   end
-  empty_array
+  empty_collection
 end
 
 my_collect(collection) {|lang|
