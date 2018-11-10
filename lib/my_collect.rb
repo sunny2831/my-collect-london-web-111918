@@ -10,4 +10,5 @@ def my_collect(collection)
   empty_array
 end
 
-my_collect(collection) {|lang| lang.upcase}
+my_collect(collection) {|name|
+  name.split(" ").first}
