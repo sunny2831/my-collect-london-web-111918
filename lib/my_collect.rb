@@ -1,7 +1,14 @@
-def hamburger(languages)
-  empty_array = []
-  languages.each do |language|
-    my_statements << "I love using #{language} for programming!"
+list = ["Tim Jones", "Bob Costas", "Don Knotts"]
+
+
+def my_collect(array)
+  i = 0
+  name_collection = []
+  while i < array.length
+    name_collection.push yield(array[i])
+    i += 1
   end
-  my_statements
+  name_collection
 end
+
+my_collect(list) {|i| i.split(" ").first}
