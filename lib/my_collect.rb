@@ -1,13 +1,13 @@
-list = ['ruby', 'javascript', 'python', 'objective-c']
+collection = ['ruby', 'javascript', 'python', 'objective-c']
 
 def my_collect(array)
   i = 0
-  name_collection = []
+  empty_array = []
   while i < array.length
-    name_collection.push yield(array[i])
+    empty_array.push yield(array[i])
     i += 1
   end
-  name_collection
+  empty_array
 end
 
-my_collect(list) {|lang| lang.upcase}
+my_collect(collection) {|lang| lang.upcase}
